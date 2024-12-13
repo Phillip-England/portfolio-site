@@ -1,0 +1,24 @@
+{{ define "nav" }}
+<nav id="nav" class="w-full fixed top-[85px] xl:top-0 h-full left-0 sm:left-[5%] md:left-[10%] lg:left-[20%] xl:left-0 z-50  lg:w-[60%] sm:w-[90%] md:w-[80%] xl:w-[300px] flex-col hidden xl:flex">
+    <ul class="flex flex-col dark:bg-black bg-white h-full p-4">
+        {{ if strEquals .ReqPath "/" }}
+        <li class="flex text-dracula-red  hover:underline border-b border-gray-200 dark:border-gray-800">
+            <a href="/" class="p-4 w-full">Home</a>
+        </li>
+        {{ else }}
+        <li class="bg-white text-black flex dark:bg-black dark:text-gray-200 hover:underline border-b border-gray-200 dark:border-gray-800">
+            <a href="/" class="p-4 w-full">Home</a>
+        </li>
+        {{ end }}
+        {{ if strEquals .ReqPath "/posts" }}
+        <li class="flex text-dracula-red  hover:underline border-b border-gray-200 dark:border-gray-800">
+            <a href="/posts" class="p-4 w-full">Posts</a>
+        </li>
+        {{ else }}
+        <li class="bg-white text-black flex dark:bg-black dark:text-gray-200  hover:underline border-b border-gray-200 dark:border-gray-800">
+            <a href="/posts" class="p-4 w-full">Posts</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>
+{{ end }}
