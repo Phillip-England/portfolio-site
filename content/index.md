@@ -2,33 +2,21 @@
 
 <p>learning in public<the-blinker rate='1000'>_</the-blinker></p>
 
-<div class="relative rounded border-gray-300">
+<div class="relative rounded border-gray-300 w-[150px]">
     <img src="/static/img/me2.jpg" class="w-[150px] rounded" />
 </div>
 
 <random-beads count='12'></random-beads>
 
 ## Recent Posts
-1. [Starting Rust](/post/starting-rust) *12/13/2024*
+1. [Trying Neovim](/post/trying-neovim) *12/13/2024*
 
-## 90% of People Reading This Suck At Programming
-You're probably one of them.
+## Welcome,
 
-I see code like this all the time in my own projects:
-```js
-console.log("da fuq")
-```
+My name is Phillip England, and I am passionate about programming. This website is my notebook. Here, I will be documenting my software development educational journey.
 
-So, if you want to avoid passing the reference of a null pointer to your mom, support me by reading about my current programming endeavours.
+I began coding in 2019 when I became interested in making a website. I still remember when I ran my first for loop in the browser console. Since then, I've been programming as a hobby. Around 3 years ago, I ramped up my learning and have been waking up at 4AM to study.
 
-## Always Learning
-I am a self-taught developer. My programming journey started around 5 years ago. It all began with wanting to get a simple website up, and down the rabbit hole I went. 5 years later, I've realized something: I am **dedicated** to learning.
+A while back, I thought to myself, "I would probably keep coding even if it was never a career for me." That's when I knew I needed to start documenting my learning. There is a chance this is a craft I keep with me for a lifetime regardless of my professional endeavours.
 
-Becuase of this, I thought, "What better way to learn than to *teach others*?"
-
-And so this website was born. I am here to document my programming journey in the hopes of inspiring and educating others.
-
-## Background
-I have been focused primarly on web development. I love both backend and frontend, but I *really* enjoy tooling and thinking through new ways to do things. I also enjoy learning new tools and deriving inspiration from them.
-
-I started coding in Javascript, but have touch on most of the modern languages in some capacity.
+That in and of itself might be worth something.

@@ -64,9 +64,9 @@ func main() {
 		})
 	}, vbf.MwLogger)
 
-	vbf.AddRoute("GET /post/starting-rust", mux, gCtx, func(w http.ResponseWriter, r *http.Request) {
+	vbf.AddRoute("GET /post/trying-neovim", mux, gCtx, func(w http.ResponseWriter, r *http.Request) {
 		templates, _ := vbf.GetContext(KeyTemplates, r).(*template.Template)
-		mdContent, err := vbf.LoadMarkdown("./content/posts/starting-rust.md", "dracula")
+		mdContent, err := vbf.LoadMarkdown("./content/post/0.trying-neovim.md", "dracula")
 		if err != nil {
 			fmt.Println(err.Error())
 			w.WriteHeader(500)

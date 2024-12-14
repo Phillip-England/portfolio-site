@@ -93,20 +93,20 @@ class TwMarkdown extends HTMLElement {
           element.classList.add(
             "font-mono",
             "px-1",
-            "py-1",
             "rounded",
             "text-sm",
             "border",
-            "border-gray-700",
+            "border-gray-200",
+            "dark:border-gray-800"
           );
         }
         break;
       case "hr":
         element.classList.add(
-          "border-none",
           "border-t",
           "border-gray-300",
-          "my-8",
+          "dark:border-gray-800",
+          "my-4",
         );
         break;
       case "a":
@@ -237,7 +237,7 @@ class TitleLinks extends HTMLElement {
         });
         link.classList.add("title-link");
         link.href = `#${heading.id}`;
-        link.textContent = "#" + heading.textContent;
+        link.textContent = heading.textContent;
         linkItem.appendChild(link);
         this.appendChild(linkItem);
       }
@@ -250,6 +250,7 @@ class TitleLinks extends HTMLElement {
       if (e.target.tagName === "A") {
         e.preventDefault();
         const targetId = e.target.getAttribute("href").substring(1);
+        history.pushState({}, document.title, window.location.pathname+"#"+targetId)
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
           const position = targetElement.getBoundingClientRect().top +
@@ -264,9 +265,68 @@ class TitleLinks extends HTMLElement {
   }
 }
 
+class CustomScroll extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
+            <style>
+                .custom-scroll::-webkit-scrollbar {
+                    width: 8px;
+                    height: 8px;
+                }
+                .custom-scroll::-webkit-scrollbar-thumb {
+                    background-color: #4B5563; /* Gray-600 */
+                    border-radius: 4px;
+                }
+                .custom-scroll::-webkit-scrollbar-track {
+                    background-color: #1F2937; /* Gray-800 */
+                }
+                /* Custom CSS to hide the scrollbar */
+                .scrollbar-hidden::-webkit-scrollbar {
+                  display: none;
+                }
+
+                .scrollbar-hidden {
+                  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+                  scrollbar-width: none;     /* For Firefox */
+                }
+            </style>
+        `;
+  }
+}
+
+class HashTitleScroll extends HTMLElement {
+  connectedCallback() {
+    console.log('conntected')
+    let offset = parseInt(this.getAttribute('offset'), 10) || 0
+    let currentHref = window.location.href
+    let parts = currentHref.split('/')
+    let lastPart = parts[parts.length-1]
+    if (!lastPart.includes('#')) {
+      return
+    }
+    let titleId = lastPart.split('#')[1]
+    let titleElm = document.getElementById(titleId)
+    if (!titleElm) {
+      return
+    }
+    const position = titleElm.getBoundingClientRect().top + window.pageYOffset + offset;
+    window.scrollTo({
+      top: position,
+      behavior: "smooth"
+    })
+  }
+}
+
+
 window.addEventListener("DOMContentLoaded", () => {
   customElements.define("the-blinker", TheBlinker);
   customElements.define("tw-markdown", TwMarkdown);
   customElements.define("random-beads", RandomBeads);
   customElements.define("title-links", TitleLinks);
+  customElements.define('hash-title-scroll', HashTitleScroll)
+  customElements.define('custom-scroll', CustomScroll)
+
 });
