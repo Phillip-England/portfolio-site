@@ -32,7 +32,10 @@
         {{ template "overlay" . }}
         <article id="article" class="flex-grow flex flex-col p-4 font-mono bg-white dark:bg-black dark:text-white overflow-auto">
           <div class='flex flex-col gap-4'>
-            <h1 class='text-3xl font-bold'>{{ .PostName }}</h1>
+            <div class='flex flex-col gap-2'>
+              <h1 class='text-3xl font-bold'>{{ .PostName }}</h1>
+              <p class='text-xs text-gray-600 dark:text-gray-400'>{{ .DateWritten }}</p>
+            </div>
             <p class='text-sm'>{{ .SubText }}<the-blinker rate="1000"></the-blinker></p>
             <img src="{{ .ImagePath }}" class="w-[150px] rounded" />
             <random-beads count='12' class='pb-6'></random-beads>
