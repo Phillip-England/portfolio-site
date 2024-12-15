@@ -71,7 +71,7 @@ func main() {
 			"ReqPath": r.URL.Path,
       "PostName": "[posts]",
       "SubText": "see what i've been learning about",
-      "ImagePath": "/static/img/texture.jpg",
+      "ImagePath": "/static/img/posts.webp",
 		})
 	}, vbf.MwLogger)
 

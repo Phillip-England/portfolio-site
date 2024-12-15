@@ -10,6 +10,7 @@
         "/post/trying-neovim",
         "/post/async-rust",
         "/post/formatting-strings-in-rust",
-        "/post/random-numbers-in-rust"
+        "/post/random-numbers-in-rust",
+        "/post/how-i-generate-this-site"
     ]
 }
