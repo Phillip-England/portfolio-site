@@ -1,16 +1,10 @@
-# [phillip england]
 
-<p>learning in public<the-blinker rate='1000'>_</the-blinker></p>
-
-<div class="relative rounded border-gray-300 w-[150px]">
-    <img src="/static/img/me2.jpg" class="w-[150px] rounded" />
-</div>
-
-<random-beads count='12'></random-beads>
 
 ## Recent Posts
 1. [Trying Neovim](/post/trying-neovim) *12/13/2024*
-
+2. [Async Rust](/post/async-rust) *12/14/2024*
+3. [Formatting Strings in Rust](/post/formatting-strings-in-rust) *12/15/2024*
+4. [Random Nuumbers in Rust](/post/random-numbers-in-rust) *12/15/2024*
 ## Welcome,
 
 My name is Phillip England, and I am passionate about programming. This website is my notebook. Here, I will be documenting my software development educational journey.

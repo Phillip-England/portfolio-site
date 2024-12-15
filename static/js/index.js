@@ -299,7 +299,6 @@ class CustomScroll extends HTMLElement {
 
 class HashTitleScroll extends HTMLElement {
   connectedCallback() {
-    console.log('conntected')
     let offset = parseInt(this.getAttribute('offset'), 10) || 0
     let currentHref = window.location.href
     let parts = currentHref.split('/')

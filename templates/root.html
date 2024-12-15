@@ -24,13 +24,20 @@
     <hash-title-scroll offset='-140'></hash-title-scroll>
     <title>{{ .Title }}</title>
 </head>
-<body class="h-screen flex flex-col dark:bg-dracula-background bg-gray-200 custom-scroll">
-    <main class="pt-[135px] flex-grow flex flex-col sm:pl-[5%] sm:pr-[5%] md:pl-[10%] md:pr-[10%] lg:pr-[20%] lg:pl-[20%] xl:pr-[30%] xl:pl-[30%]">
+<body class="h-screen flex flex-col dark:bg-black bg-white custom-scroll">
+    <main class="pt-[135px] flex-grow dark:bg-dracula-background bg-gray-200 flex flex-col sm:pl-[5%] sm:pr-[5%] md:pl-[10%] md:pr-[10%] lg:pr-[20%] lg:pl-[20%] xl:pr-[30%] xl:pl-[30%]">
         {{ template "header" . }}
         {{ template "social" . }}
         {{ template "nav" . }}
         {{ template "overlay" . }}
         <article id="article" class="flex-grow flex flex-col p-4 font-mono bg-white dark:bg-black dark:text-white overflow-auto">
+          <div class='flex flex-col gap-4'>
+            <h1 class='text-3xl font-bold'>{{ .PostName }}</h1>
+            <p class='text-sm'>{{ .SubText }}<the-blinker rate="1000"></the-blinker></p>
+            <img src="{{ .ImagePath }}" class="w-[150px] rounded" />
+            <random-beads count='12' class='pb-6'></random-beads>
+          </div>
+
             <tw-markdown>
                 {{ .Content }}
             </tw-markdown>
