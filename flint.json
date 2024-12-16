@@ -12,6 +12,7 @@
         "/post/formatting-strings-in-rust",
         "/post/random-numbers-in-rust",
         "/post/how-i-generate-this-site",
-        "/post/structs-traits-and-enums-in-rust"
+        "/post/structs-traits-and-enums-in-rust",
+        "/post/rust-hyper"
     ]
 }
