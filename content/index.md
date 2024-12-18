@@ -7,6 +7,7 @@
 5. [Structs, Traits, and Enums in Rust](/post/structs-traits-and-enums-in-rust) *12/15/2024*
 6. [Rust Hyper](/post/rust-hyper) *12/16/2024*
 7. [Iterators in Rust](/post/iterators-in-rust) *12/17/2024*
+8. [Rust Lifetimes](/post/rust-lifetimes) *12/18/2024*
 
 ## Welcome,
 
