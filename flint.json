@@ -15,6 +15,7 @@
         "/post/structs-traits-and-enums-in-rust",
         "/post/rust-hyper",
         "/post/iterators-in-rust",
-        "/post/rust-lifetimes"
+        "/post/rust-lifetimes",
+        "/post/rust-generics"
     ]
 }

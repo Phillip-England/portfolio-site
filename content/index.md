@@ -8,6 +8,7 @@
 6. [Rust Hyper](/post/rust-hyper) *12/16/2024*
 7. [Iterators in Rust](/post/iterators-in-rust) *12/17/2024*
 8. [Rust Lifetimes](/post/rust-lifetimes) *12/18/2024*
+9. [Rust Generics](/post/rust-generics) *12/19/2024*
 
 ## Welcome,
 
