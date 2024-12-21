@@ -16,6 +16,7 @@
         "/post/rust-hyper",
         "/post/iterators-in-rust",
         "/post/rust-lifetimes",
-        "/post/rust-generics"
+        "/post/rust-generics",
+        "/post/rust-blanket-implementations"
     ]
 }

@@ -9,6 +9,7 @@
 7. [Iterators in Rust](/post/iterators-in-rust) *12/17/2024*
 8. [Rust Lifetimes](/post/rust-lifetimes) *12/18/2024*
 9. [Rust Generics](/post/rust-generics) *12/19/2024*
+10. [Rust Blanket Implementations](/post/rust-blanket-implementations) *12/20/2024*
 
 ## Welcome,
 
@@ -19,3 +20,8 @@ I began coding in 2019 when I became interested in making a website. I still rem
 A while back, I thought to myself, "I would probably keep coding even if it was never a career for me." That's when I knew I needed to start documenting my learning. There is a chance this is a craft I keep with me for a lifetime regardless of my professional endeavours.
 
 That in and of itself might be worth something.
+
+## Learning Wishlist
+When I think to myself, "I need to learn that!", I will document the thought here.
+
+- Learn about blanket implementations in Rust. They basically allow you to create methods which apply to a multitude of types. I discovered this idea when starting my string parsing lib, `stur`.
